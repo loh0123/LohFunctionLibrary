@@ -1,0 +1,3 @@
+Spell Component  // Can Operation
+Inventory Component // Can Operation But Need Check
+Point Navigation // Not Finish

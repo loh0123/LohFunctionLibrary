@@ -1,0 +1,41 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.LohFunctionLibrary.cpp.obj": [
+			"LFLAbilityHandlerComponent.cpp.obj",
+			"LFLAbilityManagementComponent.cpp.obj",
+			"LFLEffectComponent.cpp.obj",
+			"LFLSpellActor.cpp.obj",
+			"LFLInventoryItemActor.cpp.obj",
+			"LFLInventoryManagementComponent.cpp.obj",
+			"LohFunctionLibrary.cpp.obj",
+			"LFLNavPathFollowingComponent.cpp.obj",
+			"LFLPointNavActor.cpp.obj",
+			"LFLPointNavData.cpp.obj",
+			"LFLPointNavigationSystemV1.cpp.obj",
+			"LFLPointNavSystemV2.cpp.obj",
+			"BoxMeshActor.cpp.obj",
+			"BuildingConstructActor.cpp.obj"
+		],
+		"Module.LohFunctionLibrary.gen.1_of_3.cpp.obj": [
+			"BoxMeshActor.gen.cpp.obj",
+			"BuildingConstructActor.gen.cpp.obj",
+			"LFLAbilityHandlerComponent.gen.cpp.obj",
+			"LFLAbilityManagementComponent.gen.cpp.obj"
+		],
+		"Module.LohFunctionLibrary.gen.2_of_3.cpp.obj": [
+			"LFLEffectComponent.gen.cpp.obj",
+			"LFLInventoryItemActor.gen.cpp.obj",
+			"LFLInventoryManagementComponent.gen.cpp.obj",
+			"LFLNavPathFollowingComponent.gen.cpp.obj",
+			"LFLPointNavActor.gen.cpp.obj",
+			"LFLPointNavData.gen.cpp.obj",
+			"LFLPointNavigationSystemV1.gen.cpp.obj"
+		],
+		"Module.LohFunctionLibrary.gen.3_of_3.cpp.obj": [
+			"LFLPointNavSystemV2.gen.cpp.obj",
+			"LFLSpellActor.gen.cpp.obj",
+			"LohFunctionLibrary.init.gen.cpp.obj"
+		]
+	}
+}

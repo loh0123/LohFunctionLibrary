@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-LohFunctionLibrary.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\UnrealEngine\HighSpeedProject\PluginLabV3\Intermediate\Build\Win64\PluginLabV3Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\UnrealEngine\HighSpeedProject\PluginLabV3\Plugins\LohFunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\LohFunctionLibrary\Module.LohFunctionLibrary.cpp.obj"
+"C:\UnrealEngine\HighSpeedProject\PluginLabV3\Plugins\LohFunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\LohFunctionLibrary\Module.LohFunctionLibrary.gen.1_of_3.cpp.obj"
+"C:\UnrealEngine\HighSpeedProject\PluginLabV3\Plugins\LohFunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\LohFunctionLibrary\Module.LohFunctionLibrary.gen.2_of_3.cpp.obj"
+"C:\UnrealEngine\HighSpeedProject\PluginLabV3\Plugins\LohFunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\LohFunctionLibrary\Module.LohFunctionLibrary.gen.3_of_3.cpp.obj"
+"C:\UnrealEngine\HighSpeedProject\PluginLabV3\Plugins\LohFunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\LohFunctionLibrary\Default.rc2.res"
+/OUT:"C:\UnrealEngine\HighSpeedProject\PluginLabV3\Plugins\LohFunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\LohFunctionLibrary\UE4Editor-LohFunctionLibrary.lib"
