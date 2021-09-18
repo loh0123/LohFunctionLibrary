@@ -8,6 +8,8 @@
 
 class ALFLPointNavData;
 class ALFLPointNavActor;
+class ULFLNavPathFollowingComponent;
+class ULFLNavigationPoint;
 
 UCLASS(BlueprintType)
 class LOHFUNCTIONLIBRARY_API ULFLPointNavSystemV2 : public UObject
@@ -46,18 +48,27 @@ public:
 
 	// Get Navigation Data By Index
 	UFUNCTION(BlueprintPure, Category = "LFLPointNavSystemV2")
-		FORCEINLINE ALFLPointNavData* GetNavigationData(const int32 Index)
-	{
-		return NavigationDataList.IsValidIndex(Index) ? NavigationDataList[Index] : nullptr;
-	}
+		FORCEINLINE ALFLPointNavData* GetNavigationData(const int32 Index) { return NavigationDataList.IsValidIndex(Index) ? NavigationDataList[Index] : nullptr; }
 
 	// Get Navigation Actor List
 	UFUNCTION(BlueprintPure, Category = "LFLPointNavSystemV2")
 		FORCEINLINE TArray<ALFLPointNavActor*>& GetNavigationActorList() { return NavigationActorList; }
 
-// Navigation Function
+// Navigation Function ( Call By Path Following Component )
 
-//
+	//UFUNCTION()
+	//	bool NavigateToNavPointAStar  (ULFLNavPathFollowingComponent* OrderComponent, ULFLNavigationPoint* FromPoint, ULFLNavigationPoint* ToPoint, const int32& DestinationScopeID);
+	//
+	//UFUNCTION()
+	//	bool NavigateToNavPointFlowMap(ULFLNavPathFollowingComponent* OrderComponent, ULFLNavigationPoint* FromPoint, ULFLNavigationPoint* ToPoint, const int32& DestinationScopeID);
+
+// Finder Function
+
+	//UFUNCTION(BlueprintCallable, Category = "LFLPointNavSystemV2 | Finder")
+	//	AActor* FindNearstNavActorAtLocation (const FVector Location);
+	//
+	//UFUNCTION(BlueprintCallable, Category = "LFLPointNavSystemV2 | Finder")
+	//	AActor* FindNearstNavActorAtLocations(const FVector Location);
 
 // Point Nav System Creation And Destruction
 
@@ -68,4 +79,19 @@ public:
 	// Destory Navigation System And Clean Up All Navigation Actor Data;
 	UFUNCTION(BlueprintCallable, Category = "LFLPointNavSystemV2")
 		void DestoryNavSystem();
+
+// BroadCast Block And Clear
+
+	//UFUNCTION(BlueprintCallable, Category = "LFLPointNavSystemV2 | BroadCast")
+	//	void BroadcastSphereCollisionBlock(AActor* Causer);
+	//
+	//UFUNCTION(BlueprintCallable, Category = "LFLPointNavSystemV2 | BroadCast")
+	//	void BroadcastBoxCollisionBlock(AActor* Causer);
+	//
+	//UFUNCTION(BlueprintCallable, Category = "LFLPointNavSystemV2 | BroadCast")
+	//	void BroadcastSphereCollisionClear(AActor* Causer);
+	//
+	//UFUNCTION(BlueprintCallable, Category = "LFLPointNavSystemV2 | BroadCast")
+	//	void BroadcastBoxCollisionClear(AActor* Causer);
+
 };
