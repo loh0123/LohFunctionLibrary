@@ -13,13 +13,146 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeLFLPointNavSystemV2() {}
 // Cross Module References
+	LOHFUNCTIONLIBRARY_API UScriptStruct* Z_Construct_UScriptStruct_FNavDataSpawnParam();
+	UPackage* Z_Construct_UPackage__Script_LohFunctionLibrary();
 	LOHFUNCTIONLIBRARY_API UClass* Z_Construct_UClass_ULFLPointNavSystemV2_NoRegister();
 	LOHFUNCTIONLIBRARY_API UClass* Z_Construct_UClass_ULFLPointNavSystemV2();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
-	UPackage* Z_Construct_UPackage__Script_LohFunctionLibrary();
 	LOHFUNCTIONLIBRARY_API UClass* Z_Construct_UClass_ALFLPointNavActor_NoRegister();
-	LOHFUNCTIONLIBRARY_API UClass* Z_Construct_UClass_ALFLPointNavData_NoRegister();
+	LOHFUNCTIONLIBRARY_API UClass* Z_Construct_UClass_ULFLPointNavData_NoRegister();
 // End Cross Module References
+class UScriptStruct* FNavDataSpawnParam::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern LOHFUNCTIONLIBRARY_API uint32 Get_Z_Construct_UScriptStruct_FNavDataSpawnParam_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FNavDataSpawnParam, Z_Construct_UPackage__Script_LohFunctionLibrary(), TEXT("NavDataSpawnParam"), sizeof(FNavDataSpawnParam), Get_Z_Construct_UScriptStruct_FNavDataSpawnParam_Hash());
+	}
+	return Singleton;
+}
+template<> LOHFUNCTIONLIBRARY_API UScriptStruct* StaticStruct<FNavDataSpawnParam>()
+{
+	return FNavDataSpawnParam::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FNavDataSpawnParam(FNavDataSpawnParam::StaticStruct, TEXT("/Script/LohFunctionLibrary"), TEXT("NavDataSpawnParam"), false, nullptr, nullptr);
+static struct FScriptStruct_LohFunctionLibrary_StaticRegisterNativesFNavDataSpawnParam
+{
+	FScriptStruct_LohFunctionLibrary_StaticRegisterNativesFNavDataSpawnParam()
+	{
+		UScriptStruct::DeferCppStructOps<FNavDataSpawnParam>(FName(TEXT("NavDataSpawnParam")));
+	}
+} ScriptStruct_LohFunctionLibrary_StaticRegisterNativesFNavDataSpawnParam;
+	struct Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AgentWidth_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AgentWidth;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AgentHeight_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AgentHeight;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxCacheSize_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MaxCacheSize;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RestartDelayFrame_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_RestartDelayFrame;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxTaskRunning_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MaxTaskRunning;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/Navigation/LFLPointNavSystemV2.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FNavDataSpawnParam>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_AgentWidth_MetaData[] = {
+		{ "Category", "NavDataSpawnParam" },
+		{ "ModuleRelativePath", "Public/Navigation/LFLPointNavSystemV2.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_AgentWidth = { "AgentWidth", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FNavDataSpawnParam, AgentWidth), METADATA_PARAMS(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_AgentWidth_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_AgentWidth_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_AgentHeight_MetaData[] = {
+		{ "Category", "NavDataSpawnParam" },
+		{ "ModuleRelativePath", "Public/Navigation/LFLPointNavSystemV2.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_AgentHeight = { "AgentHeight", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FNavDataSpawnParam, AgentHeight), METADATA_PARAMS(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_AgentHeight_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_AgentHeight_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_MaxCacheSize_MetaData[] = {
+		{ "Category", "NavDataSpawnParam" },
+		{ "ModuleRelativePath", "Public/Navigation/LFLPointNavSystemV2.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_MaxCacheSize = { "MaxCacheSize", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FNavDataSpawnParam, MaxCacheSize), METADATA_PARAMS(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_MaxCacheSize_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_MaxCacheSize_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_RestartDelayFrame_MetaData[] = {
+		{ "Category", "NavDataSpawnParam" },
+		{ "ModuleRelativePath", "Public/Navigation/LFLPointNavSystemV2.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_RestartDelayFrame = { "RestartDelayFrame", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FNavDataSpawnParam, RestartDelayFrame), METADATA_PARAMS(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_RestartDelayFrame_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_RestartDelayFrame_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_MaxTaskRunning_MetaData[] = {
+		{ "Category", "NavDataSpawnParam" },
+		{ "ModuleRelativePath", "Public/Navigation/LFLPointNavSystemV2.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_MaxTaskRunning = { "MaxTaskRunning", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FNavDataSpawnParam, MaxTaskRunning), METADATA_PARAMS(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_MaxTaskRunning_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_MaxTaskRunning_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_AgentWidth,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_AgentHeight,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_MaxCacheSize,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_RestartDelayFrame,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::NewProp_MaxTaskRunning,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_LohFunctionLibrary,
+		nullptr,
+		&NewStructOps,
+		"NavDataSpawnParam",
+		sizeof(FNavDataSpawnParam),
+		alignof(FNavDataSpawnParam),
+		Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FNavDataSpawnParam()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FNavDataSpawnParam_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_LohFunctionLibrary();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("NavDataSpawnParam"), sizeof(FNavDataSpawnParam), Get_Z_Construct_UScriptStruct_FNavDataSpawnParam_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FNavDataSpawnParam_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FNavDataSpawnParam_Hash() { return 881763897U; }
 	DEFINE_FUNCTION(ULFLPointNavSystemV2::execDestoryNavSystem)
 	{
 		P_FINISH;
@@ -47,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeLFLPointNavSystemV2() {}
 		P_GET_PROPERTY(FIntProperty,Z_Param_Index);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(ALFLPointNavData**)Z_Param__Result=P_THIS->GetNavigationData(Z_Param_Index);
+		*(ULFLPointNavData**)Z_Param__Result=P_THIS->GetNavigationData(Z_Param_Index);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(ULFLPointNavSystemV2::execGetPointNavigationSystem)
@@ -184,7 +317,7 @@ void EmptyLinkFunctionForGeneratedCodeLFLPointNavSystemV2() {}
 		struct LFLPointNavSystemV2_eventGetNavigationData_Parms
 		{
 			int32 Index;
-			ALFLPointNavData* ReturnValue;
+			ULFLPointNavData* ReturnValue;
 		};
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Index_MetaData[];
@@ -203,7 +336,7 @@ void EmptyLinkFunctionForGeneratedCodeLFLPointNavSystemV2() {}
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ULFLPointNavSystemV2_GetNavigationData_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(LFLPointNavSystemV2_eventGetNavigationData_Parms, Index), METADATA_PARAMS(Z_Construct_UFunction_ULFLPointNavSystemV2_GetNavigationData_Statics::NewProp_Index_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ULFLPointNavSystemV2_GetNavigationData_Statics::NewProp_Index_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ULFLPointNavSystemV2_GetNavigationData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(LFLPointNavSystemV2_eventGetNavigationData_Parms, ReturnValue), Z_Construct_UClass_ALFLPointNavData_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ULFLPointNavSystemV2_GetNavigationData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(LFLPointNavSystemV2_eventGetNavigationData_Parms, ReturnValue), Z_Construct_UClass_ULFLPointNavData_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ULFLPointNavSystemV2_GetNavigationData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ULFLPointNavSystemV2_GetNavigationData_Statics::NewProp_Index,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ULFLPointNavSystemV2_GetNavigationData_Statics::NewProp_ReturnValue,
@@ -294,7 +427,7 @@ void EmptyLinkFunctionForGeneratedCodeLFLPointNavSystemV2() {}
 		{ &Z_Construct_UFunction_ULFLPointNavSystemV2_CreatePointNavigationSystem, "CreatePointNavigationSystem" }, // 1913840947
 		{ &Z_Construct_UFunction_ULFLPointNavSystemV2_DestoryNavSystem, "DestoryNavSystem" }, // 686532260
 		{ &Z_Construct_UFunction_ULFLPointNavSystemV2_GetNavigationActorList, "GetNavigationActorList" }, // 13102099
-		{ &Z_Construct_UFunction_ULFLPointNavSystemV2_GetNavigationData, "GetNavigationData" }, // 1886330711
+		{ &Z_Construct_UFunction_ULFLPointNavSystemV2_GetNavigationData, "GetNavigationData" }, // 3310008105
 		{ &Z_Construct_UFunction_ULFLPointNavSystemV2_GetPointNavigationSystem, "GetPointNavigationSystem" }, // 3126734139
 	};
 #if WITH_METADATA
@@ -304,7 +437,7 @@ void EmptyLinkFunctionForGeneratedCodeLFLPointNavSystemV2() {}
 		{ "ModuleRelativePath", "Public/Navigation/LFLPointNavSystemV2.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ULFLPointNavSystemV2_Statics::NewProp_NavigationDataList_Inner = { "NavigationDataList", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_ALFLPointNavData_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ULFLPointNavSystemV2_Statics::NewProp_NavigationDataList_Inner = { "NavigationDataList", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_ULFLPointNavData_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ULFLPointNavSystemV2_Statics::NewProp_NavigationDataList_MetaData[] = {
 		{ "Comment", "// Navigation Data for calculate navigation path\n" },
@@ -355,7 +488,7 @@ void EmptyLinkFunctionForGeneratedCodeLFLPointNavSystemV2() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ULFLPointNavSystemV2, 1180535434);
+	IMPLEMENT_CLASS(ULFLPointNavSystemV2, 1656495490);
 	template<> LOHFUNCTIONLIBRARY_API UClass* StaticClass<ULFLPointNavSystemV2>()
 	{
 		return ULFLPointNavSystemV2::StaticClass();

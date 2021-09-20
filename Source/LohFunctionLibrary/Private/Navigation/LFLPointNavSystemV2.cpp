@@ -32,7 +32,7 @@ ULFLPointNavSystemV2* ULFLPointNavSystemV2::CreatePointNavigationSystem(const in
 	// Generate New Data
 	for (int32 i = 0; i < NavDataAmount; i++)
 	{
-		NewNavSystem->NavigationDataList.Add(NewNavSystem->GetWorld()->SpawnActor<ALFLPointNavData>());
+		NewNavSystem->NavigationDataList.Add(NewObject<ULFLPointNavData>());
 	}
 
 	return ULFLPointNavSystemV2::NavSystem;
@@ -41,7 +41,7 @@ ULFLPointNavSystemV2* ULFLPointNavSystemV2::CreatePointNavigationSystem(const in
 void ULFLPointNavSystemV2::DestoryNavSystem()
 {
 	// Destroy All NavData Actor
-	for (ALFLPointNavData* NavData : NavigationDataList)
+	for (ULFLPointNavData* NavData : NavigationDataList)
 	{
 		// Remember To Clean Up Actor Data
 	}
